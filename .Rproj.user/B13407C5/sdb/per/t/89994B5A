@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: GA\nType: Package\nTitle: Genetic Algorithm for Variable Selection in Regression Problems\nVersion: 0.1.0\nAuthors@R: c(\n    person(\"Titouan\", \"Jehl\",, \"titouan.jehl@berkeley.edu\", role = \"aut\"),\n    person(\"Junyuan\", \"Gao\",, \"junyuangao@berkeley.edu\", role = \"aut\"),\n    person(\"Jeffrey\", \"Kwarsick\",, \"kwarsick@berkeley.edu\", role = c(\"aut\", \"cre\")),\n    person(\"Ming\", \"Qiu\",, \"mingq@berkeley.edu\", role = \"aut\")\n    )\nAuthor: Ming Qiu, Junyuan Gao, Jehl Titouan, Jeffrey Kwarsick\nMaintainer: Jeffrey Kwarsick <kwarsick@berkeley.edu>\nDescription: A genetic algorithm for variable selection in regression problems, \n    including both linear regression and GLM.  Used for handling binary functions\n    to fit data and produce the best model based on input data.  This package was \n    assembled as part of the final project of STAT243 at the University of California,\n    Berkeley, Fall 2017.\nLicense: GPL-3\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.0.1\nSuggests: testthat\n",
+    "created" : 1512984035895.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2317366468",
+    "id" : "89994B5A",
+    "lastKnownWriteTime" : 1512984118,
+    "last_content_update" : 1512984118667,
+    "path" : "~/GA/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

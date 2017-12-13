@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Package depends on {stats}, {cvTools} #Find cross-validation, {MuMIn} #Find AICc\nlibrary(cvTools)  #Find cross-validation\nlibrary(MuMIn) #Find AICc\n\nsource(\"~/GA/R/utils.R\")\n\n#######################\n## fake data generation.\n#######################\n\n\nfake_data <- function(c, n, beta_0, beta, sigma){\n  # c: number of variables c = 10\n  # n: total number of observations\n  X <- matrix(rep(round(runif(c, min = 1, max = 10)),n) + rnorm(c*n, mean = 0, sd = 0.2), nrow = n, byrow = T)\n  Xnames <- paste0(\"X\", 1:c)\n  Xdata <- as.data.frame(X)\n  colnames(Xdata) <- Xnames\n  Y <- rowSums(t(beta*t(X))) + beta_0 + rnorm(n, mean = 0, sd = sigma)\n  return(cbind(Xdata, Y))\n}\n\ntest_data <- fake_data(10, 50, 1,\n                       sample(c(round(runif(10/2, min = 2, max = 10)), rep(0,5)), replace = F), 1)\n\nselect(test_data, 15, 100, \"lm\", \"cvLm\", 0.1, 3, mechanism = \"rank\",\n     random = FALSE, Gap = 1/4, plot.return = T)\n\n\n",
+    "created" : 1512949618151.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "269496626",
+    "id" : "14B4F585",
+    "lastKnownWriteTime" : 1512980253,
+    "last_content_update" : 1512980253585,
+    "path" : "~/GA/tests/testthat/test-training.R",
+    "project_path" : "tests/testthat/test-training.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

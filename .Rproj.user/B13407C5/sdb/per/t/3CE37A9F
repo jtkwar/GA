@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Contains all the input variables of the package\n\nX <- NULL # matrix n x c dataset to be provided by the user\nY <- NULL # vector n  of values provided by the user such that Y is a function of the columns of X\n\nn <- dim(X)[1] # number of datapoints\nc <- dim(X)[2] # number of variables\n\nmethod = lm #method used to fit the problem\n\n#collumns_to_use <- rep(1, c) # binary vector c the ith value is one if the ith column of X is to be used in the fitting, 0 otherwise\n\ncrossover_points <- 1 # number of crossoverpoints\n\nG <- 1  #G: Generation Gap, proportion of generation to be replaced by generated offsprings.\n#Chapter 3 page 81. section 3.4.2.2.\n\nP <- 2*c # number of candidates per generation\n\nfitness_function = AIC # Either AIC or BIC or other possible fitness function\n\nmu = 0.01 # mutation rate\n\nselection_with_replacement = TRUE # boolean variable set to TRUE if we select parents with replacement\n\nk = 100 # maximum number of generations\n\neps = 0 # small number, if the difference between the best fitness values of two successive generation is less than eps we consider\n        # that the model has converged and we stop\n",
+    "created" : 1512958583521.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2138267445",
+    "id" : "3CE37A9F",
+    "lastKnownWriteTime" : 1512949935,
+    "last_content_update" : 1512949935,
+    "path" : "~/GA/R/input_variables.R",
+    "project_path" : "R/input_variables.R",
+    "properties" : {
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
